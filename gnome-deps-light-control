@@ -24,3 +24,4 @@ Architecture: all
 #  <more pairs, if there's more than one file to include. Notice the starting space>
 Description:
   Stubs for bloaty Gnome deps
+  
