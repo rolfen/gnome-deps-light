@@ -4,13 +4,15 @@
 
 The gnome-deps-light virtual package provides stubs which enable you to remove bloaty gnome dependencies.
 
-In this context, a "stub" is an empty package which could replace a real package. This hack can break your system, avoid if possible.
+In this context, a "stub" is an empty package which could replace a real package.
+
+This hack can break your system, test throughly and use at your own risk.
 
 ## Why?
 
 There are a few mandatory packages that get installed with gnome, but which I never use. I would like to remove them to free some space. However the packaging manager would not let me because they are listed as dependencies of gnome. 
 
-They are very simple yet relatively big packages, in particular a video animation and some documentation seldom used, so we could get away with it.
+They are very simple yet relatively big packages which I don't use.
 
 So I created this "fake", empty package which "provides" these dependencies and also "conflicts" with them thereby triggering the package manager to uninstall them.
 
