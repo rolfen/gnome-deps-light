@@ -12,7 +12,7 @@ There are a few mandatory packages that get installed with gnome, but which I ne
 
 They are very simple yet relatively big packages, in particular a video animation and some documentation seldom used, so we could get away with it.
 
-So I created this "fake", empty package which "provides" these dependencies, thereby tricking the package manager into allowing me to uninstall them.
+So I created this "fake", empty package which "provides" these dependencies and also "conflicts" with them thereby triggering the package manager to uninstall them.
 
 ## A package, where?
 
